@@ -7,15 +7,18 @@ namespace projetos
     {
         static void Main(string[] args)
         {
-            Ares hero = new Ares("Ares", 23, "knight");
-            Ares oponnent = new Ares("Maléfico", 99, "Devil");
+            Hero ares = new Hero("Ares", 23, "knight");
+            Hero oponnent = new Hero("Maléfico", 99, "Devil");
+            Wizard wizard = new Wizard("Jéssica", 24, "white Wizard");
+
+
  
             
-            Console.Write(hero);
-            Console.Write(oponnent);
+            //Não é possível Criar a Jéssica com a mesma classe/forma
+            Console.Write(ares.Attack());
+            Console.Write(wizard.Attack());
             
             
-            Console.Write(hero);
         }
     }
 }

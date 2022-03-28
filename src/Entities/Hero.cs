@@ -1,18 +1,20 @@
 namespace projetos
 {
 
-    public class Ares
+    public class Hero
     {
 
         //Método construtor
-        public Ares(string Name, int Level, string tipoHeroi ) {
+        public Hero(string Name, int Level, string tipoHeroi ) {
             this.Name = Name;
             this.level = 23;
             this.tipoHeroi = tipoHeroi;
         }
 
         //Polimorfismo/ construtor do objeto
-        public Ares () {} 
+        public Hero () {
+            
+        } 
         
 
         
@@ -23,6 +25,12 @@ namespace projetos
         // O Override ignora aquilo que herdou de outra classe
         public override string ToString() {
             return this.Name + " " + this.level + " " + this.tipoHeroi + " "; 
+        }
+
+
+        // O método virtual é uma permissão que o filho altere o comportamento pai
+        public virtual string Attack() {
+           return this.Name + " Atacou o seu oponente com espada ";
         }
     }
 
