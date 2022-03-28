@@ -8,12 +8,14 @@ namespace projetos
         static void Main(string[] args)
         {
             Ares hero = new Ares("Ares", 23, "knight");
-
-            //hero.Name = "Ares";
-            //hero.level = 2;
-            //hero.tipoHeroi= "Knight";
+            Ares oponnent = new Ares("Maléfico", 99, "Devil");
+ 
             
-            Console.Write("");
+            Console.Write(hero);
+            Console.Write(oponnent);
+            
+            
+            Console.Write(hero);
         }
     }
 }
