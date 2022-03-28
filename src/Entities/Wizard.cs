@@ -12,5 +12,9 @@ namespace projetos.src.Entities
         public override string Attack () {
             return this.Name + "Lançou a sua magia";
         }
+        //Exemplo de polimorfismo
+        public string Attack(int Bonus) {
+            return this.Name + "Lançou um forte ataque magistico";
+        }
     }
 }

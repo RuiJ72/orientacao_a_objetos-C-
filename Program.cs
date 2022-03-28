@@ -17,6 +17,7 @@ namespace projetos
             //Não é possível Criar a Jéssica com a mesma classe/forma
             Console.Write(ares.Attack());
             Console.Write(wizard.Attack());
+            Console.WriteLine(wizard.Attack(1));
             
             
         }
