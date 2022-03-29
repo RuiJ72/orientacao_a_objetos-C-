@@ -3,23 +3,18 @@ using projetos.src.Entities;
 
 namespace projetos
 {
+    
     class Program
     {
         static void Main(string[] args)
         {
-            Hero ares = new Hero("Ares", 23, "knight");
-            Hero oponnent = new Hero("Maléfico", 99, "Devil");
+            Knight ares = new Knight("Ares", 23, "knight");
             Wizard wizard = new Wizard("Jéssica", 24, "white Wizard");
 
-
- 
-            
-            //Não é possível Criar a Jéssica com a mesma classe/forma
-            Console.Write(ares.Attack());
-            Console.Write(wizard.Attack());
             Console.WriteLine(wizard.Attack(1));
+            Console.WriteLine(wizard.Attack(7));
             
-            
+              
         }
     }
 }

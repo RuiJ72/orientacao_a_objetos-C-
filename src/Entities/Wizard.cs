@@ -14,7 +14,14 @@ namespace projetos.src.Entities
         }
         //Exemplo de polimorfismo
         public string Attack(int Bonus) {
-            return this.Name + "Lançou um forte ataque magistico";
+
+            if (Bonus > 6) {
+                return this.Name + "Lançou uma magia super eficaz de " + Bonus;
+            } else {
+
+                return this.Name + "Lançou um ataque magistico de força fraca com bonus de" + Bonus;  
+            }
+
         }
     }
 }

@@ -1,7 +1,8 @@
 namespace projetos
 {
-
-    public class Hero
+    //classe abstacta, que é uma que não se pode herdar
+    //Uma clase para que outras usem
+    public abstract class Hero
     {
 
         //Método construtor
@@ -13,7 +14,7 @@ namespace projetos
 
         //Polimorfismo/ construtor do objeto
         public Hero () {
-            
+
         } 
         
 
